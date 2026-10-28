@@ -89,7 +89,7 @@ export class GildedRose {
         continue;
       const degs = Object.entries(settings.degradation)
         .filter((e) => Number(e[0]) > this.items[i].sellIn)
-        .sort((a, b) => Number(a) - Number(b));
+        .sort((a, b) => Number(a[0]) - Number(b[0]));
       const degradation = degs[0][1];
       const next = current - degradation;
 
