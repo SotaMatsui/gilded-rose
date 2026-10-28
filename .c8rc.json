@@ -1,0 +1,7 @@
+{
+  "all": true,
+  "include": ["app/**/*.ts"],
+  "extension": [".ts"],
+  "reporter": ["text", "html", "lcov"],
+  "reports-dir": "coverage/mocha"
+}

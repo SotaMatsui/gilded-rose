@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "target": "ES2022",
+    "strict": true,
+    "noImplicitAny": false,
+    "noEmit": true,
+    "types": ["node"],
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "paths": {
+      "@/*": [
+        "./app/*"
+      ]
+    }
+  },
+  "include": ["app/**/*.ts", "test/golden-master-text-test.ts", "vitest.config.mts"]
+}
